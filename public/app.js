@@ -1,7 +1,7 @@
 const btn = document.querySelector('.btn').addEventListener('click', getClick)
 
 function getClick() {
-  location.href = 'https://shrouded-lowlands-50211.herokuapp.com/'
+  location.href = 'https://shrouded-lowlands-50211.herokuapp.com/chat.html'
 }
 
 function randombg(){

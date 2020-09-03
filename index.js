@@ -1,10 +1,11 @@
-const express = require("express")
-const app = require("express")();
-const http = require("http").Server(app);
-const io = require("socket.io")(http);
-const port = process.env.PORT || 3000;
+import { static } from "express";
+let app = require("express")();
+let http = require("http").Server(app);
+let io = require("socket.io")(http);
+let port = process.env.PORT || 3000;
 
-app.use(express.static('public'))
+app.use(static('public'))
+
 console.log(__dirname + "da")
 app.get("/", function (req, res) {
   res.sendFile(__dirname + "/index.html");

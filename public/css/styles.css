@@ -7,7 +7,7 @@
 
 body {
   font: 13px Helvetica, Arial;
-  background: url('/img/whatsappBackground.png') no-repeat;
+  background: url('/public/img/whatsappBackground.png') no-repeat;
   background-size: 100vw;
 }
 

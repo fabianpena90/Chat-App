@@ -14,6 +14,8 @@ io.on('connection', (socket) => {
  
   io.emit('chat message', 'some message sent to all users');
 
+  socket.broadcast.emit('hi');
+
   socket.on('disconnect', () => {
     console.log('user disconnected');
   });

@@ -6,12 +6,12 @@ function getClick() {
 
 function randombg(){
   var random= Math.floor(Math.random() * 7) + 0;
-  var bigSize = ["url('../img/carBackground.jpg')",
-                 "url('../img/staysafeBackground.jpg')",
-                 "url('../img/sunshineBackground.jpg')",
-                 "url('../img/brickell.png')",
-                 "url('../img/lake.png')",
-                 "url('../img/miamibeach.png')"
+  var bigSize = ["url('./public/img/carBackground.jpg')",
+                 "url('./public/img/staysafeBackground.jpg')",
+                 "url('./public/img/sunshineBackground.jpg')",
+                 "url('./public/img/brickell.png')",
+                 "url('./public/img/lake.png')",
+                 "url('./public/img/miamibeach.png')"
                 ];
   document.getElementById("random").style.backgroundImage=bigSize[random];
 }

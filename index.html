@@ -1,37 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-  <title>Chat Up</title>
+  <link rel="stylesheet" href="css/welcome.css">
+  <title>Welcome to Chat Up</title>
 </head>
+<body id="random" onload="randombg()">
+  <div class="container">
+    <h1 class="l-heading">Welcome to Chat Up App</h1>
+    <p>Where your messages won't be compromise 🤪</p>
+    <div class="content">
+      <label for="name">Enter your Full Name:</label>
+      <input type="text" name="name" id="name"> 
+      <button class="btn">Enter</button>
+    </div>
+  </div>
 
-<body>
-  <ul id="messages"></ul>
-  <form action="">
-    <input id="m" autocomplete="off" /><button><i class="fas fa-paper-plane"></i> Send</button>
-  </form>
 
-  <script src="/socket.io/socket.io.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script>
-    $(function () {
-      var socket = io();
-      $('form').submit(function(e){
-        e.preventDefault(); // prevents page reloading
-        socket.emit('chat message', $('#m').val());
-        $('#m').val('');
-        return false;
-      });
-      socket.on('chat message', function(msg){
-        $('#messages').append($('<li>').text(msg));
-      });
-    });
-  </script>
+  <script src="app.js"></script>
 </body>
-
 </html>

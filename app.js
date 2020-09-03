@@ -1,11 +1,3 @@
-// var images = [
-//   'carBackground.jpg', 
-//   'staysafeBackground.jpg', 
-//   'sunshineBackground.jpg', 
-//   'whatsappBackground.jpg'
-// ];
-// document.querySelector('body')[0].style.backgroundImage = 'url(' + images[Math.floor(Math.random() * images.length)] + ')';
-
 const btn = document.querySelector('.btn').addEventListener('click', getClick)
 
 function getClick() {

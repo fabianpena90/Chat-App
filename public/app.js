@@ -9,9 +9,9 @@ function randombg(){
   var bigSize = ["url('./public/img/carBackground.jpg')",
                  "url('./public/img/staysafeBackground.jpg')",
                  "url('./public/img/sunshineBackground.jpg')",
-                 "url('./public/img/brickell.png')",
-                 "url('./public/img/lake.png')",
-                 "url('./public/img/miamibeach.png')"
+                 "url('./public/img/brickell.jpg')",
+                 "url('./public/img/lake.jpg')",
+                 "url('./public/img/miamibeach.jpg')"
                 ];
   document.getElementById("random").style.backgroundImage=bigSize[random];
 }

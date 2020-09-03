@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  font: 13px Helvetica, Arial;
+  background: url('/img/whatsappBackground.png') no-repeat;
+  background-size: 100vw;
+}
+
+form {
+  background: transparent;
+  padding: 3px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+form input {
+  border: 0;
+  padding: 20px;
+  width: 85%;
+  margin-right: 0.5%;
+  margin-left: 25px;
+  border-radius: 15px;
+}
+
+form button {
+  width: 9%;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin-left: 20px;
+  padding: 20px;
+  font-size: 1rem;
+}
+
+#messages {
+  list-style-type: none;
+  margin: 20px;
+  padding: 20px;
+  font-size: 2rem;
+}
+
+#messages li {
+  padding: 5px 10px;
+  font-size: 2rem;
+}
+
+#messages li:nth-child(odd) {
+  background: #eee;
+}

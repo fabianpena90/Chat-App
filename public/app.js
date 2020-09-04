@@ -1,7 +1,7 @@
 const btn = document.querySelector('.btn').addEventListener('click', getClick)
 
 function getClick() {
-  location.href = 'https://shrouded-lowlands-50211.herokuapp.com/chat.html'
+  location.href = 'https://shrouded-lowlands-50211.herokuapp.com/'
 }
 
 function randombg(){
@@ -13,5 +13,5 @@ function randombg(){
                  "url('./public/img/lake.jpg')",
                  "url('./public/img/miamibeach.jpg')"
                 ];
-  document.getElementById("random").style.backgroundImage=bigSize[random];
+  document.getElementById("random").style.backgroundImage = bigSize[random];
 }

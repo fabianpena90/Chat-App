@@ -51,4 +51,5 @@ form button {
 
 #messages li:nth-child(odd) {
   background: #eee;
+  opacity: 0.5;
 }

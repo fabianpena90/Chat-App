@@ -19,10 +19,20 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
+    let name = ''
     $(function () {
       var socket = io();
       $('form').submit(function(e){
         e.preventDefault(); // prevents page reloading
+        if(name === "") {
+          name = $('#m').val();
+          $('#m').attr("placeholder", "Press enter to send a message");
+          $('#m').val('');
+        } else {
+          socket.emit('Chat message', name + ": " + $('#m').val());
+          $('#m').val('');
+          return false
+        }
         socket.emit('chat message', $('#m').val()); 
         $('#m').val('');
         return false;

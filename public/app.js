@@ -13,6 +13,6 @@ function randombg(){
                  "url('./img/lake.jpg')",
                  "url('./img/miamibeach.jpg')"
                 ];
-                console.log(bigSize[random])
+                // console.log(bigSize[random])
   document.querySelector("#random").style.backgroundImage = bigSize[random];
 }

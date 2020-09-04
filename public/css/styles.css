@@ -42,11 +42,14 @@ form button {
   margin: 20px;
   padding: 20px;
   font-size: 2rem;
+  font-weight: 700;
 }
 
 #messages li {
   padding: 5px 10px;
   font-size: 2rem;
+  background: dimgray;
+  opacity: 0.5;
 }
 
 #messages li:nth-child(odd) {

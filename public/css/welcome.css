@@ -1,5 +1,5 @@
 body {
-  background-image: url('/public/img/carBackground.jpg');
+  background-image: url('public/img/carBackground.jpg');
   height: 600px;
   background-repeat: no-repeat;
   background-size: cover;
